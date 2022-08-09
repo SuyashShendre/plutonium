@@ -15,6 +15,11 @@ router.get('/students', function (req, res){
     res.send(students)
 })
 
+router.get('/teachers', function (req, res){
+    let students = ['Sabiha', 'Neha', 'Akash']
+    res.send(students)
+})
+
 router.get('/student-details/:name', function(req, res){
     /*
     params is an attribute inside request that contains 
